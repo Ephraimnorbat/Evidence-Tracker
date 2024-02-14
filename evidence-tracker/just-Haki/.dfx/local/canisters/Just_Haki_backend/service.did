@@ -1,0 +1,18 @@
+type User = 
+ record {
+   id: nat32;
+   role: text;
+ };
+type Evidence = 
+ record {
+   accessLog: vec User;
+   filename: text;
+   id: nat32;
+   uploader: text;
+ };
+service : {
+  getEvidence: (nat32) -> (opt Evidence);
+  loginUser: (nat32) -> (opt User);
+  registerUser: (User) -> (bool);
+  uploadEvidence: (Evidence, nat32) -> (bool);
+}

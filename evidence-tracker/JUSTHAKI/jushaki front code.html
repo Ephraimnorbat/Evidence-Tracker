@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In / Log In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+        body{
+
+background-image:url('background image.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #fff;
+
+}
+
+
+    </style>
+</head>
+
+
+    
+
+    <h1>Welcome to JUSTHAKI</h1>
+    
+    <p>Choose an action:</p>
+
+    <a href="#" class="button" id="signInButton">Sign In</a>
+    <a href="#" class="button" id="logInButton">Log In</a>
+
+    <script>
+    document.getElementById('signInButton').addEventListener('click', function() {
+    // Communicate with the registration form in the second HTML file
+    window.location.href = 'registration_form.html';
+});
+
+    document.getElementById('logInButton').addEventListener('click', function() {
+    alert('Log In button clicked!');
+    // Add your log-in logic here
+});
+    </script>
+
+</body>
+</html>

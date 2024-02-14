@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <title>LOG IN PAGE</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .button:hover {
+        background-color: #2980b9;
+    }
+</style>
+</header>
+
+<body>
+   
+        <h1> LOG IN</h1>
+   
+    <form>
+        <div class="container">
+            <label>Username/Email: </label>
+            <input type="text" placeholder="Enter your certification no." name="username" required>
+            <label>Password : </label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <button type="submit">Login</button>
+            <input type="checkbox" checked="checked"> Remember me
+            <button type="button" class="cancelbtn"> Cancel</button> Forgot <a href="#"> password? </a>
+        </div>
+    
+    </form>
+    <div>
+        <a href="#" class="button" id="homeButton">Home</a>
+        <script>
+            document.getElementById('homeButton').addEventListener('click', function() {
+                window.location.href = 'index.html'; 
+              });
+            </script>
+            </div>
+
+</body>
+
+</html>

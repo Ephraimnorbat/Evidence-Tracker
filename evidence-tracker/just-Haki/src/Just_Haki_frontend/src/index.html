@@ -1,0 +1,60 @@
+<><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up / Log In</title>
+    <style>
+        body {
+            background-image: url('background image.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="color: white;">Welcome to JUSTHAKI</h1>
+    
+    <p style="color: white;">Choose an action:</p>
+
+    <a href="registration_form.html" class="button" id="signInButton" >Sign Up</a>
+    <a href="#" class="button" id="logInButton">Log In</a>
+
+    <script>
+        // You can add JavaScript code here to handle button clicks or other interactions.
+        document.getElementById('signInButton').addEventListener('click', function() {
+    // Communicate with the registration form in the second HTML file
+    window.location.href = 'registration_form.html';
+    });
+    document.getElementById('logInButton').addEventListener('click', function() {
+  window.location.href = 'log.html'; // Redirect to the registrationform file
+});
+
+    // function goToPage(page) {
+    //         window.location.href = page;
+    //     }
+    </script>
+
+</body>
+</html>

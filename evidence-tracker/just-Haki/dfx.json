@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "Just_Haki_backend": {
+      "main": "src/Just_Haki_backend/main.mo",
+      "type": "motoko"
+    },
+    "Just_Haki_frontend": {
+      "dependencies": [
+        "Just_Haki_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/Just_Haki_frontend/src/index.html"
+      },
+      "source": [
+        "src/Just_Haki_frontend/assets",
+        "dist/Just_Haki_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
